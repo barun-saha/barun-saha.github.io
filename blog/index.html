@@ -1,19 +1,50 @@
 ---
-layout: default
-title: A Better Life
+layout:
 ---
 
-<div class="posts">
-  {% for post in site.posts %}
-    <article class="post">
 
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="Software and technology to make life a better place">
+		<meta name="author" content="Barun Saha">
 
-      <div class="entry">
-        {{ post.content | truncatewords:40}}
-      </div>
+		<title>A Better Life</title>
 
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-    </article>
-  {% endfor %}
-</div>
+		<link href="assets/lib/bootstrap-3.1.1/css/bootstrap.min.css" rel="stylesheet">
+		<link href="assets/css/custom.css" rel="stylesheet">
+
+		<!-- Custom styles for this template -->
+		<!--link href="starter-template.css" rel="stylesheet"-->
+
+		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!--[if lt IE 9]>
+		  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+		  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+	{% include header.html %}
+
+	<div id="main" role="main" class="posts container">
+		{% for post in site.posts %}
+		<article class="post">
+
+			<h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
+
+			<div class="entry bigger">
+				{{ post.content | truncatewords:40}}
+			</div>
+
+			<a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
+		</article>
+		{% endfor %}
+	</div>
+
+	</body>
+</html>
