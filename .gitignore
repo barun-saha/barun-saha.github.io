@@ -1,2 +1,5 @@
 _site
 blog/_includes
+Gemfile
+Gemfile.lock
+*~
