@@ -32,13 +32,18 @@ layout:
 		{% for post in site.posts %}
 		<article class="post">
 
-			<h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
+			<h3 style="vertical-align: text-top; padding: 0;">
+				<a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+			</h3>
+
+			<div class="date meta bigger" style="vertical-align: text-middle;">
+				{{ post.date | date: "%B %e, %Y" }}
+			</div>
 
 			<div class="entry bigger">
 				{{ post.content | truncatewords:40}}
+				<a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
 			</div>
-
-			<a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
 		</article>
 		{% endfor %}
 	</div>
