@@ -1,3 +1,18 @@
+p {
+    font-size: 1.15em;
+    color: #333333;
+    margin-bottom: 15px;
+}
+
+h3 {
+    margin-top: 25px;
+    margin-bottom: 17px;
+}
+
+.lead {
+    color: #555555;
+}
+
 .bigger {
     font-size: 1.1em;
 }
@@ -8,7 +23,8 @@
   background-color: #EEEEEE;
 }
 .entry {
-    padding-top: 10px;
+    margin-top: 25px;
+
 }
 .meta {
     color: gray;
