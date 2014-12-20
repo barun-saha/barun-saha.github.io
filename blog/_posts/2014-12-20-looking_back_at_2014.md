@@ -3,7 +3,7 @@ layout: post
 title: Looking Back at 2014
 category:
 tagline:
-tags:
+tags: 2014, retrospect, life
 ---
 
 
@@ -19,7 +19,7 @@ On one hand, [ISRO](http://www.isro.org/)'s [Mangalyaan](http://www.isro.org/mar
 ### On the Personal Front
 
 
-Looking back, 2014 has been a year of a few, small but worthy personal accomplishments. After having played with a variety of free web hosting sites over the years, I finally decided to buy my own domain name, [barunsaha.me](http://barunsaha.me/). A few tweaking of the [Bootstrap](http://getbootstrap.com/) templates and using [GitHub](https://github.com/), I had my very own website up and running!
+Looking back, 2014 has been a year of a few, small but worthy personal accomplishments. After having played with a variety of free web hosting sites over the years, I finally decided to buy my own domain name, [barunsaha.me](http://barunsaha.me/). A little tweaking of the [Bootstrap](http://getbootstrap.com/) templates and using [GitHub](https://github.com/), I had my very own website up and running!
 
 This also has been the year of diving into Android. After attending a course on [Android at Coursera](https://www.coursera.org/course/android), I reckoned it was time to get my hands dirty. To start with, I developed [Software Engineering Lite](https://www.coursera.org/course/android), an (unofficial) Android port of the [Software Engineering Virtual Lab](http://virtual-labs.ac.in/cse08/).
 
