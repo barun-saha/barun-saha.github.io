@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-<!--<html lang="en" manifest="/offline.appcache">-->
   <head>
 	<meta charset="utf-8">
 	<meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
@@ -15,11 +14,6 @@
 	<link href="assets/lib/bootstrap-3.1.1/css/bootstrap.min.css" rel="stylesheet">
 	<link href="assets/css/custom.css" rel="stylesheet">
 
-	<!--style>
-	  p {
-    font-size: 1.2em;
-	  }
-	</style-->
 	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 	<!--[if lt IE 9]>
 	  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -29,52 +23,48 @@
 
   <body>
 
-	<div class="container">
-		<div class="row page-header">
-			<div class="col-md-6">
-				<h1>Barun Saha</h1>
-				<p class="lead">Research, technology and life.</p>
-			</div>
+	<!-- Static navbar -->
+    <nav class="navbar navbar-default navbar-static-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+			<li class="active"><a href="/"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+            <li><a href="research.html"><span class="glyphicon glyphicon-dashboard"></span> Research</a></li>
+            <li class="dropdown">
+              <a href="projects.html" class="dropdown-toggle" data-toggle="dropdown"
+				 role="button" aria-expanded="false"><span class="glyphicon glyphicon-cog"></span>
+				Projects <span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+				<li><a href="projects.html">View all</a></li>
+                <li><a href="projects.html#virtual_labs">Virtual Labs</a></li>
+                <li><a href="projects.html#the_one_kb">The ONE Knowledge Base</a></li>
+                <li><a href="projects.html#se_lite">Software Engineering Lite</a></li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="/blog/"><span class="glyphicon glyphicon-list"></span> Blog</a></li>
+            <li><a href="misc.html"><span class="glyphicon glyphicon-list-alt"></span> Miscellaneous<span class="sr-only">(current)</span></a></li>
+            <li><a href="contact.html"><span class="glyphicon glyphicon-envelope"></span> Contact</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
 
-
-			<div class="col-md-6 navbar-wrapper">
-
-				<!--nav class="navbar navbar-inverse navbar-static-top" role="navigation"-->
-				<nav class="navbar  navbar-static-top" role="navigation" style="background-color: white; background-image: none;">
-
-					<div class="navbar-header">
-					  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"
-						style="background-color: #178ACC;">
-						<span class="sr-only" style="background-color: white;">Toggle navigation</span>
-						<span class="icon-bar" style="background-color: white;"></span>
-						<span class="icon-bar" style="background-color: white;"></span>
-						<span class="icon-bar" style="background-color: white;"></span>
-					  </button>
-
-						<!--a class="navbar-brand" rel="home" href="#" title="Home">
-							<span class="glyphicon glyphicon-home"></span> Home
-						</a-->
-					</div>
-					<div class="navbar-collapse collapse">
-					  <ul class="nav navbar-nav">
-						<li class="active"><a href="/"><span class="glyphicon glyphicon-home"></span> Home</a></li>
-						<li><a href="research.html"><span class="glyphicon glyphicon-dashboard"></span> Research</a></li>
-						<li><a href="projects.html"><span class="glyphicon glyphicon-cog"></span> Projects</a></li>
-						<li><a href="misc.html"><span class="glyphicon glyphicon-list-alt"></span> Miscellaneous</a></li>
-						<li><a href="contact.html"><span class="glyphicon glyphicon-envelope"></span> Contact</a></li>
-					  </ul>
-					</div>
-
-				</nav>
-			</div>
-		</div>
-	</div>
-
+	<img src="images/self/pentacle_transparent_bg2_20.png" alt="Logo" class="logo">
 
 	<div class="container">
 		<div class="starter-template">
 			<p class="lead">
-				Hello!
+			  Hello!
 			</p>
 		</div>
 	</div>
@@ -83,7 +73,7 @@
 		<div class="row">
 			<div class="col-md-7">
 				<p>
-					I am Barun. I <span class="glyphicon glyphicon-heart" style="color: #E41B17;"></span>
+					I am Barun Saha. I <span class="glyphicon glyphicon-heart heart-beat" style="color: #E41B17;"></span>
 					to build things.
 				</p>
 
@@ -99,8 +89,8 @@
 					Opportunistic Mobile Networks. I'm also interested in
 					the allied areas of wireless networks. As a software
 					developer, I firmly believe in the philosophy of open source.
-					When am not busy with these tasks, I often indulge in writing
-					poems.
+					When not busy with these tasks, sometimes I try my hand
+					with poetry.
 				</p>
 
 				<p>
@@ -134,8 +124,8 @@
 					mobile ad hoc networks (MANETs).
 				</p>
 
-				<p><a class="btn btn-default" href="research.html"
-					  role="button">View details »</a></p>
+				<p><a class="btn btn-default blue-border" href="research.html"
+					  role="button">View details &raquo;</a></p>
 			</div>
 
 			<div class="col-md-4">
@@ -147,8 +137,8 @@
 					Labs.
 				</p>
 
-				<p><a class="btn btn-default" href="projects.html"
-					  role="button">View details »</a></p>
+				<p><a class="btn btn-default blue-border" href="projects.html"
+					  role="button">View details &raquo;</a></p>
 			</div>
 
 			<div class="col-md-4">
@@ -159,8 +149,8 @@
 					I also maintain a blog and tutorial on DTNs.
 				</p>
 
-				<p><a class="btn btn-default" href="misc.html"
-					  role="button">View details »</a></p>
+				<p><a class="btn btn-default blue-border" href="misc.html"
+					  role="button">View details &raquo;</a></p>
 			</div>
 	  </div>
 	</div>

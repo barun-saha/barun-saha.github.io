@@ -1,13 +1,37 @@
-<div class="container" style="margin-top: -10px;">
-	<div class="row page-header">
-		<div class="col-md-6">
-			<h1><a href="{{ site.baseurl }}/blog/">A Better Life</a></h1>
-			<p class="lead">On technology and software to make
-			life a better place</p>
-		</div>
-
-		<div class="col-md-6">
-			<h2 class="pull-right"><a href="/"><span class="glyphicon glyphicon-home"></span> Home</a></h2>
-		</div>
+<!-- Static navbar -->
+<nav class="navbar navbar-default navbar-static-top" role="navigation">
+  <div class="container">
+	<div class="navbar-header">
+	  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+		<span class="sr-only">Toggle navigation</span>
+		<span class="icon-bar"></span>
+		<span class="icon-bar"></span>
+		<span class="icon-bar"></span>
+	  </button>
 	</div>
-</div>
+	<div id="navbar" class="navbar-collapse collapse">
+	  <ul class="nav navbar-nav">
+		<li><a href="/"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+		<li><a href="/research.html"><span class="glyphicon glyphicon-dashboard"></span> Research</a></li>
+		<li class="dropdown">
+		  <a href="/projects.html" class="dropdown-toggle" data-toggle="dropdown"
+			 role="button" aria-expanded="false"><span class="glyphicon glyphicon-cog"></span>
+			Projects <span class="caret"></span></a>
+		  <ul class="dropdown-menu" role="menu">
+			<li><a href="/projects.html">View all</a></li>
+			<li><a href="/projects.html#virtual_labs">Virtual Labs</a></li>
+			<li><a href="/projects.html#the_one_kb">The ONE Knowledge Base</a></li>
+			<li><a href="/projects.html#se_lite">Software Engineering Lite</a></li>
+		  </ul>
+		</li>
+	  </ul>
+	  <ul class="nav navbar-nav navbar-right">
+		<li class="active"><a href="/blog/"><span class="glyphicon glyphicon-list"></span> Blog</a></li>
+		<li><a href="/misc.html"><span class="glyphicon glyphicon-list-alt"></span> Miscellaneous<span class="sr-only">(current)</span></a></li>
+		<li><a href="/contact.html"><span class="glyphicon glyphicon-envelope"></span> Contact</a></li>
+	  </ul>
+	</div><!--/.nav-collapse -->
+  </div>
+</nav>
+
+<img src="/images/self/pentacle_transparent_bg2_20.png" alt="Logo" class="logo">
