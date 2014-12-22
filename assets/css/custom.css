@@ -9,6 +9,20 @@ h3 {
     margin-bottom: 17px;
 }
 
+.navbar-brand {
+  float: none;
+  }
+
+.navbar-center
+{
+    position: absolute;
+    left: 45%;
+    top: 0;
+    text-align: center;
+    margin: auto;
+}
+
+
 .lead {
     color: #555555;
 }
@@ -30,11 +44,31 @@ h3 {
     border: 1px solid #54b4eb;
 }
 
+.blog-header-container {
+    border-bottom: 1px dotted gray;
+}
+
+.blog-header {
+  animation-name: bounceIn;
+  -webkit-animation-name: bounceIn;
+  -moz-animation-name: bounceIn;
+  -o-animation-name: bounceIn;
+  -ms-animation-name: bounceIn;
+  animation-duration: 2s;
+  -webkit-animation-duration: 2s;
+  -moz-animation-duration: 2s;
+  -o-animation-duration: 2s;
+  -ms-animation-duration: 2s;
+}
+
 .logo {
+/*
     position: absolute;
     top: 50%;
     left: 46%;
     margin-top: -320px;
+*/
+	margin: 0 auto;
     z-index: 10000;
     visibility: hidden;
     animation: rotateIt 1s linear 1s;
@@ -250,5 +284,52 @@ h3 {
 
   45% {
     -ms-transform: scale(1.0);
+  }
+}
+
+
+
+@keyframes bounceIn {
+  0% {
+    transform: translateY(-40px);
+  }
+  95% {
+    transform: translateY(1px);
+  }
+}
+
+@-webkit-keyframes bounceIn {
+  0% {
+    -webkit-transform: translateY(-40px);
+  }
+  95% {
+    -webkit-transform: translateY(1px);
+  }
+}
+
+@-moz-keyframes bounceIn {
+  0% {
+    -moz-transform: translateY(-40px);
+  }
+  95% {
+    -moz-transform: translateY(1px);
+  }
+}
+
+@-o-keyframes bounceIn {
+  0% {
+    -o-transform: translateY(-40px);
+  }
+  95% {
+    -o-transform: translateY(1px);
+  }
+}
+
+@-ms-keyframes bounceIn {
+  0% {
+    -ms-transform: translateY(-40px);
+  }
+  95% {
+    -ms-transform: translateY(1px);
   }
 }
