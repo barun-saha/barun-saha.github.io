@@ -10,13 +10,23 @@
 
 from jinja2 import Environment, FileSystemLoader
 
-env = Environment(loader=FileSystemLoader('./templates'))
 
-# List of files to be rendered
-file_list = ['contact', 'index', 'misc', 'projects', 'research',]
+def rotate_array(active):
+    '''Rotate the entries of an array by a single position to the right'''
+    # Remove the last element from the array
+    element = active.pop()
+    # Insert it as the first element of the array
+    active.insert(0, element)
+
+
+ENV = Environment(loader=FileSystemLoader('./templates'))
+
+# List of pages to be rendered -- MUST be listed according to their order
+# in the navigation bar
+PAGE_LIST = ['index', 'research', 'projects', 'misc', 'contact',]
 
 # Title of individual pages
-titles = {
+TITLES = {
     'contact': 'Barun Saha | Contact',
     'index': 'Barun Saha',
     'misc': 'Barun Saha | Miscellaneous',
@@ -24,13 +34,20 @@ titles = {
     'research': 'Barun Saha | Research',
 }
 
-for item in file_list:
+# CSS active class for the navigation bar list items
+state = ['active', '', '', '', '', '',]
+
+for item in PAGE_LIST:
     file_name = item + '.html'
-    template = env.get_template(file_name)
-    html = template.render(title=titles[item])
+    template = ENV.get_template(file_name)
+    #print state
+    html = template.render(title=TITLES[item], active_state=state)
 
     #print html
     # Write output in the corresponding HTML file
     print 'Writing', file_name
     with open(file_name, 'w') as out_file:
         out_file.write(html)
+
+    # Rotate active states for the next page
+    rotate_array(state)

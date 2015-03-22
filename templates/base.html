@@ -40,9 +40,9 @@
 
 		<div class="collapse navbar-collapse" id="navbar-collapse-1">
 		  <ul class="nav navbar-nav">
-			<li><a href="/"><span class="glyphicon glyphicon-home"></span> Home</a></li>
-			<li><a href="research.html"><span class="glyphicon glyphicon-dashboard"></span> Research</a></li>
-			<li class="dropdown">
+			<li class="{{ active_state[0] }}"><a href="/"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+			<li class="{{ active_state[1] }}"><a href="research.html"><span class="glyphicon glyphicon-dashboard"></span> Research</a></li>
+			<li class="dropdown {{ active_state[2] }}">
 			  <a href="projects.html" class="dropdown-toggle" data-toggle="dropdown"
 				 role="button" aria-expanded="false"><span class="glyphicon glyphicon-cog"></span>
 				Projects <span class="caret"></span></a>
@@ -57,8 +57,8 @@
 
 		  <ul class="nav navbar-nav navbar-right">
 			<li><a href="/blog/"><span class="glyphicon glyphicon-list"></span> Blog</a></li>
-			<li><a href="misc.html"><span class="glyphicon glyphicon-list-alt"></span> Miscellaneous<span class="sr-only">(current)</span></a></li>
-			<li class="active"><a href="contact.html"><span class="glyphicon glyphicon-envelope"></span> Contact</a></li>
+			<li class="{{ active_state[3] }}"><a href="misc.html"><span class="glyphicon glyphicon-list-alt"></span> Miscellaneous<span class="sr-only">(current)</span></a></li>
+			<li class="{{ active_state[4] }}"><a href="contact.html"><span class="glyphicon glyphicon-envelope"></span> Contact</a></li>
 		  </ul>
 		</div><!-- /.navbar-collapse -->
 	  </div>
