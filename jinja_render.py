@@ -1,12 +1,16 @@
 #!/usr/bin/python
 #
-# Convert Jinja templates into HTML files. Currently, only inheritance is used
-# in the templates.
+# Convert Jinja templates into HTML files. Currently, only inheritance
+# is used in the templates.
 #
 # Source: http://pbpython.com/pdf-reports.html
 #
 # Barun Saha
 # 15 March 2015
+#
+# This script is released under a GNU GPL v3 license. You are free to
+# use this script as per the license terms. No warranties provided.
+#
 
 from jinja2 import Environment, FileSystemLoader
 
