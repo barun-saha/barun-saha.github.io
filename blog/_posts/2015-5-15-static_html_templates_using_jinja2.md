@@ -199,7 +199,7 @@ Thus, next time there is a need to alter the design of the pages, we just need t
 
 ### Conclusion
 
-HTML templates are a great way to increase reusability and productivity. Jinja2, a templating engine for Python, is useful in this regard. Of course, one can use various static website generator engines available today. However, the flexibility of Jinja2 (or any other similar templates) not only help in creating static HTML pages, but they can be later [converted to other formats][pdf_report] as well. A next possible step would be to even ignore HTML, and use [Jinja2 together with YAML][yaml_jinja].
+HTML templates are a great way to increase reusability and productivity. Jinja2, a templating engine for Python, is useful in this regard. Of course, one can use various static website generator engines available today. However, the flexibility of Jinja2 (or any other similar templates) not only help in creating static HTML pages, but they can be later [converted to other formats][pdf_report] as well. A next possible step would be to use [Jinja2 together with YAML][yaml_jinja].
 
 
 
