@@ -4,6 +4,7 @@ title: Static HTML Templates using Jinja2
 category:
 tagline:
 tags: html, static, template, jinja2, python
+description: An article on the use of templates with static HTML pages and rendering them using Jinja2. In particular, setting the active CSS class for navigation menu items is discussed here.
 ---
 
 ### Introduction

@@ -4,6 +4,7 @@ title: Looking Back at 2014
 category:
 tagline:
 tags: 2014, retrospect, life
+description: Looking back at some of the events of the world and personal life in 2014.
 ---
 
 

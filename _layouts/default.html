@@ -10,6 +10,24 @@
 
 		<meta name="author" content="{{ site.name }}" />
 		<meta name="description" content="{{ site.description }}">
+        
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:site" content="@1barun">
+        {% if page.title %}
+        <meta name="twitter:title" content="{{ page.title }}">
+        {% else %}
+        <meta name="twitter:title" content="{{ site.title }}">
+        {% endif %}
+        
+        {% if page.description %}
+        <meta name="twitter:description" content="{{ page.description }}">
+        {% else %}
+        <meta name="twitter:description" content="{{ site.description }}">
+        {% endif %}
+        
+        {% if page.image %}
+        <meta name="twitter:image" content="{{ page.image }}">
+        {% endif %}
 
 		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 		<!--[if lt IE 9]>

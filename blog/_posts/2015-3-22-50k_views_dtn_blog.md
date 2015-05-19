@@ -4,6 +4,8 @@ title: 50K Views of the DTN Blog
 category:
 tagline:
 tags: dtn, blog
+description: An infographic illustrating the statistics of the DTN blog on the occasion of its 50K views.
+image: https://2.bp.blogspot.com/-pF1hkf6ikZg/VQ26VLDsEkI/AAAAAAAABJI/h3c9o5H9z_Q/s1600/The%2BDTN%2BBlog.png
 ---
 
 
