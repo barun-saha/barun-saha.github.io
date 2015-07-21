@@ -339,3 +339,28 @@ nav.navbar {
     -ms-transform: translateY(1px);
   }
 }
+
+
+/* News Box */
+.glyphicon {
+    margin-right: 4px !important; /*override*/
+}
+.pagination .glyphicon {
+    margin-right: 0px !important; /*override*/
+}
+.pagination a {
+    color: #555;
+}
+.panel ul {
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+}
+.news-item {
+    padding: 5px 5px;
+    margin: 0px;
+    border-bottom: 1px dotted #555;
+}
+.panel-footer {
+    padding: 4px;
+}

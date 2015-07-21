@@ -66,15 +66,22 @@
 
 	
 
-	<div class="container">
+    <div class="container">
 		<div class="row">
-			<div class="col-md-7">
+			<div class="col-md-8">
 				<p>
-					I am Barun Saha. I <span class="glyphicon glyphicon-heart heart-beat" style="color: #E41B17;"></span>
+					I am Barun Saha. I 
+                    <span class="glyphicon glyphicon-heart heart-beat" style="color: #E41B17;"></span>
 					to build things.
 				</p>
 
 				<p>
+                    <a href="images/self/barun_saha.jpg">
+					   <img align="left" alt="Barun Saha" 
+                            style="padding-right: 8px;"
+                            src="images/self/barun_saha_thumbnail.jpg">
+                    </a>
+                    
 					I hold an MS (by research) degree from Indian Institute of
 					Technology Kharagpur, India.
 					Prior to that, I have worked at Wipro Technologies
@@ -83,7 +90,8 @@
 
 				<p>
 					My primary research interest is in the domain of
-					Opportunistic Mobile Networks. I'm also interested in
+					<a href="presentations/OMNs.pdf">Opportunistic Mobile 
+                    Networks</a>. I'm also interested in
 					the allied areas of wireless networks. As a software
 					developer, I believe in the philosophy of open source.
 					When not busy with these tasks, sometimes I try my hand
@@ -97,17 +105,66 @@
 					<a href="http://jekyllrb.com/">Jekyll</a> and
 					<a href="http://jinja.pocoo.org/">Jinja</a>, and is
 					powered by <a href="https://pages.github.com/">
-					GitHub Pages</a>.
+					GitHub Pages</a>. Please feel free to browse around!
 				</p>
 			</div>
-
-			<div class="col-md-1">
-			</div>
+            
 
 			<div class="col-md-4">
-				<a href="images/self/barun_saha.jpg">
-					<img src="images/self/barun_saha_thumbnail.jpg" alt="Barun Saha">
-				</a>
+                <!-- News box -->                
+                <div class="panel panel-default">
+                <div class="panel-heading"> 
+                    <span class="glyphicon glyphicon-list-alt"></span>
+                    <b>News</b>
+                </div>
+                
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <ul class="news">
+                                <li class="news-item">
+                                    <span class="news-date">[21 Jul 2015]</span>
+                                    Slides from my recent presentation on 
+                                    <a href="presentations/OMNs.pdf">Opportunistic 
+                                    Mobile Networks</a>
+                                </li>
+
+                                <li class="news-item">
+                                    <span class="news-date">[14 Jun 2015]</span>
+                                    <a href="http://delay-tolerant-networks.blogspot.com/">
+                                        The DTN Blog</a> and
+                                    <a href="http://theonekb-barunsaha.rhcloud.com/">
+                                    The ONE Knowledge Base</a> are now listed in 
+                                    the home page of the 
+                                    <a href="http://netlab.tkk.fi/">ONE 
+                                        simulator</a>
+                                </li>
+
+                                <li class="news-item">
+                                    <span class="news-date">[29 May 2015]</span>
+                                    <a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=7118165"> 
+                                        ''Utility-based Exploration for 
+                                        Performance Enhancement in Opportunistic 
+                                        Mobile Networks''
+                                    </a> got accepted in IEEE Transactions on 
+                                    Computers
+                                </li>
+
+                                <li class="news-item">
+                                    <span class="news-date">[13 Jun 2014]</span>
+                                    <a href="https://www.openshift.com/blogs/openshift-developer-spotlight-barun-saha">Featured</a> 
+                                    in <a href="https://www.openshift.com/developer-spotlight">
+                                    OpenShift Developer Spotlight</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="panel-footer">
+                </div>
+                
+                </div>
 			</div>
 		</div>
 	</div>
@@ -167,7 +224,6 @@
 
 
 
-
     <footer>
 		<div class="container" style="margin-top: 10px; padding-top: 10px;
 			padding-bottom: 10px; border-top: 1px solid #178ACC;">
@@ -196,7 +252,23 @@
 
 	  ga('create', 'UA-54544059-1', 'auto');
 	  ga('send', 'pageview');
-
 	</script>
+      
+    
+    <script src="assets/lib/bootstrap-news-box/scripts/jquery.bootstrap.newsbox.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(function () {
+            $(".news").bootstrapNews({
+                newsPerPage: 3,
+                navigation: true,
+                autoplay: true,
+                direction:'up', // up or down
+                animationSpeed: 'normal',
+                newsTickerInterval: 5000 //5 secs
+            });
+        });
+    </script>
+
+
   </body>
 </html>
