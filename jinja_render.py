@@ -27,7 +27,7 @@ ENV = Environment(loader=FileSystemLoader('./templates'))
 
 # List of pages to be rendered -- MUST be listed according to their order
 # in the navigation bar
-PAGE_LIST = ['index', 'research', 'projects', 'misc', 'contact',]
+PAGE_LIST = ['index', 'research', 'projects', 'misc',]
 
 # Title of individual pages
 TITLES = {

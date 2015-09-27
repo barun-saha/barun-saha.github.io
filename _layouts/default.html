@@ -35,9 +35,11 @@
 		  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 		<![endif]-->
 
-		<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/assets/lib/bootstrap-3.1.1/css/bootstrap.min.css" />
-		<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/assets/css/custom.css" />
-		<link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
+		<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/assets/lib/bootstrap-3.1.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/assets/css/custom.css">
+		<link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml">
+        <link href="/assets/css/academicons_v1.5/academicons.css" rel="stylesheet">
 	</head>
 
 	<body>
@@ -49,13 +51,46 @@
 	  {{ content }}
 	</div>
 
-	<div class="wrapper-footer">
-	  <div class="container">
-		<footer class="footer">
+	<footer>
+        <div class="subfooter">
+            <div class="container">
+                <div class="col-md-8 col-md-offset-2">
+                    <ul class="list-inline">
+                        <li><span class="fa fa-envelope-o"></span> 
+                            <a href="images/self/email.jpg">Email</a></li>
+                        <li><span class="fa fa-linkedin-square"></span> 
+                            <a href="http://in.linkedin.com/in/barunsaha">LinkedIn</a></li>
+                        <li><span class="fa fa-twitter-square"></span> 
+                            <a href="https://twitter.com/1barun">Twitter</a></li>
+                        <li><span class="fa fa-github-square"></span> 
+                            <a href="https://github.com/barun-saha">GitHub</a></li>
+                        <li><span class="ai ai-google-scholar-square"></span> 
+                            <a href="https://scholar.google.co.in/citations?user=OQVTsxEAAAAJ&hl=en">Google Scholar</a></li>
+                        <li class="last"><span class="ai ai-researchgate-square"></span> 
+                            <a href="https://www.researchgate.net/profile/Barun_Saha">ResearchGate</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8">
+                        <p>
+                            &copy; Copyright 2014, 2015 Barun Saha. 
+                            All rights reserved.
+                        </p>
+                    </div>
 
-		</footer>
-	  </div>
-	</div>
+                    <div class="col-md-4">
+                        <p class="pull-right"><a href="#">Back to top</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+	</footer>
+
 
 	<script>
 	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
