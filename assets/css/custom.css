@@ -426,10 +426,10 @@ body > div.container {
     padding-bottom: 15px;
 }
 .highlights > dt {
-    padding-top: 15px;
+    padding-top: 30px;
 }
 .highlights dd {
-    padding-bottom: 5px;
+    padding-bottom: 15px;
     border-bottom: 1px dotted gray;
 }
 
