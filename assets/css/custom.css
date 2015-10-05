@@ -412,10 +412,14 @@ body > div.container {
     left: 2.9%;
     background: white;
 }
-.circle-icon {
+.circle-icon, .circle-icon2 {
     position: relative;
     top: 15%;
     color: #AEDDF9;
+}
+.circle-icon2 {
+    color: tomato;
+    font-size: 30px;
 }
 .circle-icon-small {
     position: absolute;
@@ -423,13 +427,13 @@ body > div.container {
 }
 
 .highlights {
-    padding-bottom: 15px;
+    padding-bottom: 20px;
 }
 .highlights > dt {
     padding-top: 30px;
 }
 .highlights dd {
-    padding-bottom: 15px;
+    padding-bottom: 25px;
     border-bottom: 1px dotted gray;
 }
 
@@ -447,8 +451,8 @@ body > div.container {
 }
 .subfooter li {
     font-size: 1.1em;
-    padding-right: 12px;
-    padding-left: 11px;
+    padding: 0 15px;
+/*    padding-left: 14px;*/
     border-right: 1px solid #1995dc;
 }
 .subfooter li.last {
@@ -465,4 +469,12 @@ body > div.container {
 .subsubtitle {
     color: gray;
     font-size: 0.8em;
+}
+
+.name {
+    padding-top: 30px;
+}
+p.h4.meta {
+    font-size: 0.65em;
+    line-height: 1.2em;
 }
