@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    var selector = "#vls, #se-lite, #dtn-blog, #one-kb";
+    var selector = "#se-lite, #dtn-blog, #one-kb";
     $(selector).css("opacity", "0");
     $(selector).waypoint({
         handler: function(direction) {

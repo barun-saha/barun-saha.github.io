@@ -478,3 +478,14 @@ p.h4.meta {
     font-size: 0.65em;
     line-height: 1.2em;
 }
+
+.say-hello {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+.say-hello span {
+    font-size: 1.2em;
+}
+.say-hello a {
+    margin-left: 10px;
+}
