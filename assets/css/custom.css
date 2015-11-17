@@ -495,3 +495,11 @@ p.h4.meta {
     margin-bottom: 10px;
     border: 1px dotted gray;
 }
+.book-social {
+    padding: 10px;
+    border: 1px solid tomato;
+}
+/*
+.book-social p {
+    font-size: 14px;
+}*/
