@@ -489,3 +489,9 @@ p.h4.meta {
 .say-hello a {
     margin-left: 10px;
 }
+
+.book-image {
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px dotted gray;
+}
