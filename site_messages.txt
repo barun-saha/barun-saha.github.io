@@ -1,0 +1,3 @@
+Know more about our forthcoming book <a href="the_omn_book.html">
+Opportunistic Mobile Networks: Advances and Applications</a> to be
+published by Springer.

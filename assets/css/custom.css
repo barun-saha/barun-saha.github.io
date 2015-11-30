@@ -503,3 +503,9 @@ p.h4.meta {
 .book-social p {
     font-size: 14px;
 }*/
+.site-message {
+    font-size: 1.2em;
+    border: 1px solid tomato;
+    margin-left: 20px;
+    margin-right: 20px;
+}
