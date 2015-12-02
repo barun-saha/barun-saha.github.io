@@ -498,6 +498,7 @@ p.h4.meta {
 .book-social {
     padding: 10px;
     border: 1px solid tomato;
+    background-color: #FFFFC2;
 }
 /*
 .book-social p {
