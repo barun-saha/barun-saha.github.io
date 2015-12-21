@@ -498,13 +498,37 @@ p.h4.meta {
     border: 1px solid tomato;
     background-color: #FFFFC2;
 }
-/*
-.book-social p {
-    font-size: 14px;
-}*/
 .site-message {
     font-size: 1.2em;
     border: 1px solid tomato;
     margin-left: 20px;
     margin-right: 20px;
+}
+
+blockquote{
+  display:block;
+  background: #fff;
+  padding: 15px 20px 15px 45px;
+  margin: 0 0 20px;
+  position: relative;
+  line-height: 1.2;
+    border-left: 5px solid tomato;
+    background-color: #fafafa;
+}
+blockquote::before{
+  content: "\201C";
+  position: absolute;
+  left: 10px;
+  top:0px;
+    font-size: 4em;
+}
+blockquote::after{
+  content: "";
+}
+blockquote p:first-child {
+    font-size: 0.99em;
+    font-style: italic;
+}
+blockquote small {
+    font-size: 0.9em;
 }
