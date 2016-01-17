@@ -506,20 +506,21 @@ p.h4.meta {
 }
 
 blockquote{
-  display:block;
-  background: #fff;
-  padding: 15px 20px 15px 45px;
-  margin: 0 0 20px;
-  position: relative;
-  line-height: 1.2;
+    display:block;
+    background: #fff;
+    padding: 15px 20px 15px 45px;
+    margin: 0 0 20px;
+    position: relative;
+    line-height: 1.2;
     border-left: 5px solid tomato;
     background-color: #fafafa;
 }
 blockquote::before{
-  content: "\201C";
-  position: absolute;
-  left: 10px;
-  top:0px;
+    content: "\201C";
+    color: darkgray;
+    position: absolute;
+    left: 10px;
+    top:0px;
     font-size: 4em;
 }
 blockquote::after{
@@ -531,50 +532,35 @@ blockquote p:first-child {
 }
 blockquote small {
     font-size: 0.9em;
+    color: dimgray;
 }
 
 .chapters-list {
-    font-size: 1.14em;
+    font-size: 1.15em;
 }
 .chapters-list dt {
     font-size: 1.1em;
 }
-.chapters-list dt::before{
+.chapters-list dd {
+    font-size: 1.1em;
+    padding: 5px;
+}
+.chapters-list {
+    counter-reset: chapter;
+}
+.chapters-list dt:before{
     left: 10px;
     top: 0px;
     font-size: 1.2em;
-    padding-right: 5px;
+    padding-right: 2px;
+    padding-left: 10px;
+    text-align: right;
     color: darkgray;
+    counter-increment: chapter;
+    content: counter(chapter) ". ";
 }
-#c1::before {
-    content: "1";
-}
-#c2::before {
-    content: "2";
-}
-#c3::before {
-    content: "3";
-}
-#c4::before {
-    content: "4";
-}
-#c5::before {
-    content: "5";
-}
-#c6::before {
-    content: "6";
-}
-#c7::before {
-    content: "7";
-}
-#c8::before {
-    content: "8";
-}
-#c9::before {
-    content: "9";
-}
-#c10::before {
-    content: "10";
+.c10 {
+    margin-left: -9px;
 }
 .chapters-list dd {
     margin-bottom: 10px;
