@@ -532,3 +532,50 @@ blockquote p:first-child {
 blockquote small {
     font-size: 0.9em;
 }
+
+.chapters-list {
+    font-size: 1.14em;
+}
+.chapters-list dt {
+    font-size: 1.1em;
+}
+.chapters-list dt::before{
+    left: 10px;
+    top: 0px;
+    font-size: 1.2em;
+    padding-right: 5px;
+    color: darkgray;
+}
+#c1::before {
+    content: "1";
+}
+#c2::before {
+    content: "2";
+}
+#c3::before {
+    content: "3";
+}
+#c4::before {
+    content: "4";
+}
+#c5::before {
+    content: "5";
+}
+#c6::before {
+    content: "6";
+}
+#c7::before {
+    content: "7";
+}
+#c8::before {
+    content: "8";
+}
+#c9::before {
+    content: "9";
+}
+#c10::before {
+    content: "10";
+}
+.chapters-list dd {
+    margin-bottom: 10px;
+}
