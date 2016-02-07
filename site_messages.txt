@@ -1,5 +1,5 @@
-<a href="the_omn_book.html">Opportunistic Mobile Networks: Advances and Applications</a>
-published by <a href="http://link.springer.com/">Springer</a> is set to be
+<a href="the_omn_book.html">Opportunistic Mobile Networks: Advances and Applications</a>,
+published by <a href="http://link.springer.com/">Springer</a>, is set to be
 availble in March 2016
 
 <a role="button" href="https://www.springer.com/in/book/9783319290294"
