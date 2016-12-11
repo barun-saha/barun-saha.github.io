@@ -204,15 +204,15 @@ body > div.container {
    0% {
     -webkit-transform: scale(none);
   }
-  
+
   15% {
     -webkit-transform: scale(1.2);
   }
-  
+
   25% {
     -webkit-transform: scale(1.05);
   }
-  
+
   30% {
     -webkit-transform: scale(1.2);
   }
@@ -226,15 +226,15 @@ body > div.container {
    0% {
     -moz-transform: scale(none);
   }
-  
+
   15% {
     -moz-transform: scale(1.2);
   }
-  
+
   25% {
     -moz-transform: scale(1.05);
   }
-  
+
   30% {
     -moz-transform: scale(1.2);
   }
@@ -248,15 +248,15 @@ body > div.container {
    0% {
     -o-transform: scale(none);
   }
-  
+
   15% {
     -o-transform: scale(1.2);
   }
-  
+
   25% {
     -o-transform: scale(1.05);
   }
-  
+
   30% {
     -o-transform: scale(1.2);
   }
@@ -271,15 +271,15 @@ body > div.container {
    0% {
     transform: scale(none);
   }
-  
+
   15% {
     transform: scale(1.2);
   }
-  
+
   25% {
     transform: scale(1.05);
   }
-  
+
   30% {
     transform: scale(1.15);
   }
@@ -293,15 +293,15 @@ body > div.container {
    0% {
     -ms-transform: scale(none);
   }
-  
+
   15% {
     -ms-transform: scale(1.2);
   }
-  
+
   25% {
     -ms-transform: scale(1.05);
   }
-  
+
   30% {
     -ms-transform: scale(1.15);
   }
@@ -564,4 +564,10 @@ blockquote small {
 }
 .chapters-list dd {
     margin-bottom: 10px;
+}
+
+.pub-resource {
+    margin-left: 8px;
+    font-family:monospace;
+    color: tomato;
 }
