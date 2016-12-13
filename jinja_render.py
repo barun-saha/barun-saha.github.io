@@ -27,13 +27,13 @@ ENV = Environment(loader=FileSystemLoader('./templates'))
 
 # List of pages to be rendered -- MUST be listed according to their order
 # in the navigation bar
-PAGE_LIST = ['index', 'research', 'projects', 'misc', 'the_omn_book',]
+PAGE_LIST = ['index', 'research', 'software', 'misc', 'the_omn_book',]
 
 # Title of individual pages
 TITLES = {
     'index': 'Barun Saha',
     'misc': 'Barun Saha | Miscellaneous',
-    'projects': 'Barun Saha | Projects',
+    'software': 'Barun Saha | Software',
     'research': 'Barun Saha | Research',
     'the_omn_book': 'Barun Saha | Opportunistic Mobile Networks',
 }
