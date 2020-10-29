@@ -49,7 +49,7 @@ for item in PAGE_LIST:
 
     #print html
     # Write output in the corresponding HTML file
-    print 'Writing', file_name
+    print('Writing', file_name)
     with open(file_name, 'w') as out_file:
         out_file.write(html)
 
