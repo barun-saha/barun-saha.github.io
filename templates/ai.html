@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+
+{% block page_description %}Artificial Intelligence solutions by Barun{% endblock %}
+
+{% block page_title %}
+Artificial Intelligence Solutions
+{% endblock %}
+
+{% block content %}
+
+	<div class="container">
+		<h2><a href="#hackathons" name="hackathons">Generative AI Hackathons</a></h2>
+
+		<p>
+			2023 has been the year of Generative AI, with several Large Language Models and Large Multimodal Models becoming available. I have had participated in a few hackathons to gain a first-hand experience of these novel technologies and build a small solution or two that can help make our lives better.
+		</p>
+
+        <p>A list of few such GenAI solutions developed in some of the hackathons is as follows:</p>
+
+        <ul reversed class="bigger">
+            <li>
+                <a href="https://github.com/barun-saha/sys2doc"><strong>Sys2Doc</strong></a>: Generate <a href="https://huggingface.co/spaces/barunsaha/sys2doc">documentation based on system diagrams</a> using <a href="https://cloud.google.com/blog/products/ai-machine-learning/gemini-support-on-vertex-ai">Gemini Pro Vision</a>.
+			</li>
+			<li>
+                <a href="https://github.com/barun-saha/rag2rich"><strong>RAG2Rich</strong></a>: Optimize <a href="https://rag2rich-vc4smj6o3q-uc.a.run.app/">the configuration of a Retrieval-Augmented Generation System</a> using <a href="https://cloud.google.com/blog/products/ai-machine-learning/generative-ai-applications-with-vertex-ai-palm-2-models-and-langchain">Vertex AI and PaLM 2</a>.
+			</li>
+			<li>
+                <a href="https://github.com/barun-saha/slide-deck-ai"><strong>Slide Deck AI</strong></a>: Generate a <a href="https://huggingface.co/spaces/barunsaha/slide-deck-ai">slide deck on a given topic</a> using Mistral 7B Instruction tuned. Previously, it used Llama 2, and had <a href="https://www.clarifai.com/blog/llama-2-hackathon-with-clarifai-winners-announcement">won 3rd place in the Llama 2 Hackathon with Clarifai</a>. <i class="fa-solid fa-trophy"></i>
+			</li>
+			<li>
+                <a href="https://github.com/barun-saha/poem2pic"><strong>Poem2Pic</strong></a>: Generate an <a href="https://huggingface.co/spaces/barunsaha/poem2pic">image based on a poem</a> using Stable Diffusion.
+			</li>
+        </ul>
+	</div>
+
+
+{% endblock %}
