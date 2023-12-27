@@ -353,10 +353,10 @@ h3 {
     background: #AEDDF9;
 }
 .footer * {
-    color: white;
+    color: #d9d9d9 !important;
 }
 .subfooter * {
-    color: tomato;
+    color: #999999;
 }
 .subfooter li {
     font-size: 1.1em;
