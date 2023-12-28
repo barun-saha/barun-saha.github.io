@@ -4,7 +4,7 @@ h3 {
 }
 
 .bigger {
-    font-size: 1.15em;
+    font-size: 1.05em;
 }
 .active {
   background-color: #EEEEEE;
@@ -37,12 +37,6 @@ h3 {
 }
 
 .logo {
-/*
-    position: absolute;
-    top: 50%;
-    left: 46%;
-    margin-top: -320px;
-*/
 	margin: 0 auto;
     z-index: 10000;
     visibility: hidden;
@@ -356,7 +350,7 @@ h3 {
     color: #d9d9d9 !important;
 }
 .subfooter * {
-    color: #999999;
+    color: #888888;
 }
 .subfooter li {
     font-size: 1.1em;
