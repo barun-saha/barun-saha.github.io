@@ -10,7 +10,7 @@
 
 	<title>{{ title }}</title>
 
-	<link rel="stylesheet" href="assets/lib/bootstrap-3.1.1/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 	<link rel="stylesheet" href="assets/css/custom.css">
     <link rel="stylesheet" href="assets/css/academicons_v1.5/academicons.css">
@@ -23,19 +23,21 @@
     
     <style>
         p {
-            font-size: 1.16em;
+            font-size: 1.12em;
             color: #333333;
             margin-bottom: 15px;
         }
+        p.normal {
+            font-size: 1em;
+        }
+        h2>a, h3>a, h4>a, h5>a {
+            text-decoration: none;
+        }
         .navbar-brand {
+            font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
             float: none;
-        }
-        .navbar-default .navbar-brand {
             font-size: 2em;
-        }
-        [role="navigation"] .navbar-brand, [role="navigation"] .meta {
             display: block;
-            float: left;
         }
         .navbar-center {
             position: absolute;
@@ -55,7 +57,7 @@
             padding-top: 15px;
             padding-bottom: 15px;
             background: #AEDDF9;
-            color: #4d4d4d;
+            color: #3d3d3d;
         }
         body > div.container {
             padding-top: 20px;
@@ -74,48 +76,54 @@
   </head>
 
   <body>
-
-  <nav class="navbar navbar-default" role="navigation">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-
-                <a class="navbar-brand" href="/">Barun Saha</a>
-            </div>
-
-            <div class="collapse navbar-collapse" id="navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="{{ active_state[1] }}"><a href="research.html"><span class="fa-solid fa-flask fa-lg"></span> Research</a></li>
-                    <li class="{{ active_state[2] }}"><a href="ai.html"><span class="fa-solid fa-microchip fa-lg"></span> AI</a></li>
-                    <li class="{{ active_state[3] }}"><a href="the_omn_book.html"><span class="fa-solid fa-book fa-lg"></span> #TheOMNBook</a></li>
-                    <li class="{{ active_state[4] }}"><a href="poetry.html"><span class="fa-solid fa-feather fa-lg"></span> Poetry</a></li>
-                    <li class="dropdown {{ active_state[5] }}">
-                        <a href="software.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><span class="fa-solid fa-code fa-lg"></span>
-				Software <span class="caret"></span></a>
-                        <ul class="dropdown-menu" role="menu">
-                            <li><a href="software.html">View all</a></li>
-                            <li><a href="software.html#virtual_labs">Virtual Labs</a></li>
-                            <li><a href="software.html#the_one_kb">The ONE Knowledge Base</a></li>
-                            <li><a href="software.html#se_lite">Software Engineering Lite</a></li>
-                        </ul>
+      
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+          <div class="container-md">
+              <a class="navbar-brand" href="/">Barun Saha</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item {{ active_state[1] }}">
+                      <a class="nav-link" href="research.html"><span class="fa-solid fa-flask fa-lg"></span> Research</a>
                     </li>
-                    <li class="dropdown {{ active_state[6] }}">
-                        <a href="projects.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><span class="fa-solid fa-list fa-lg"></span>
-				Miscellaneous <span class="caret"></span></a>
-                        <ul class="dropdown-menu" role="menu">
-                            <li><a href="/blog/">A Better Life</a></li>
-                            <li><a href="http://delay-tolerant-networks.blogspot.com/">The DTN Blog</a></li>
-                        </ul>
+                      <li class="nav-item {{ active_state[2] }}">
+                      <a class="nav-link" href="ai.html"><span class="fa-solid fa-microchip fa-lg"></span> GenAI</a>
                     </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+                      <li class="nav-item {{ active_state[3] }}">
+                      <a class="nav-link" href="the_omn_book.html"><span class="fa-solid fa-book fa-lg"></span> #TheOMNBook</a>
+                    </li>
+                      <li class="nav-item {{ active_state[4] }}">
+                      <a class="nav-link" href="poetry.html"><span class="fa-solid fa-feather fa-lg"></span> Poetry</a>
+                    </li>           
+                    <li class="nav-item dropdown {{ active_state[5] }}">
+                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <span class="fa-solid fa-code fa-lg"></span> Software
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="software.html">View all</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="software.html#the_one_kb">Virtual Labs</a></li>
+                        <li><a class="dropdown-item" href="software.html#the_one_kb">The ONE Knowledge Base</a></li>
+                      </ul>
+                    </li>
+                      
+                    <li class="nav-item dropdown {{ active_state[6] }}">
+                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <span class="fa-solid fa-list fa-lg"></span> Miscellaneous
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="/blog/">A Better Life</a></li>
+                        <li><a class="dropdown-item" href="http://delay-tolerant-networks.blogspot.com/">The DTN Blog</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+              </div>
+          </div>
+      </nav>
+      
 
     <div class="page-title">
         <div class="container">{% block page_title %}{% endblock %}</div>
@@ -125,46 +133,36 @@
 
     <footer>
         <div class="subfooter">
-            <div class="container">
-                <div class="col-md-8 col-md-offset-2">
+                <div class="d-flex justify-content-center">
                     <ul class="list-inline">
-                        <li><span class="fas fa-envelope-square"></span>
+                        <li class="list-inline-item me-2"><span class="fas fa-envelope-square"></span>
                             <a href="images/self/email.jpg">Email</a></li>
-                        <li><span class="fab fa-linkedin"></span>
+                        <li class="list-inline-item me-2"><span class="fab fa-linkedin"></span>
                             <a href="http://in.linkedin.com/in/barunsaha">LinkedIn</a></li>
-                        <li><span class="fab fa-twitter-square"></span>
+                        <li class="list-inline-item me-2"><span class="fab fa-twitter-square"></span>
                             <a href="https://twitter.com/1barun">Twitter</a></li>
-                        <li><span class="fab fa-github-square"></span>
+                        <li class="list-inline-item me-2"><span class="fab fa-github-square"></span>
                             <a href="https://github.com/barun-saha">GitHub</a></li>
-                        <li><span class="ai ai-google-scholar-square"></span>
+                        <li class="list-inline-item me-2"><span class="ai ai-google-scholar-square"></span>
                             <a href="https://scholar.google.co.in/citations?user=OQVTsxEAAAAJ&hl=en">Google Scholar</a></li>
-                        <li class="last"><span class="ai ai-researchgate-square"></span>
+                        <li class="list-inline-item me-2 last"><span class="ai ai-researchgate-square"></span>
                             <a href="https://www.researchgate.net/profile/Barun_Saha">ResearchGate</a></li>
                     </ul>
                 </div>
-            </div>
         </div>
 
         <div class="footer">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-8">
-                        <p>
-                            &copy; Copyright 2014&ndash;2023 Barun Saha.
-                            All rights reserved.
-                        </p>
-                    </div>
-
-                    <div class="col-md-4">
-                        <p class="pull-right"><a href="#">Back to top</a></p>
-                    </div>
-                </div>
+            <div class="d-flex justify-content-center">
+                <p>
+                    &copy; Copyright 2014&ndash;2023 Barun Saha.
+                    All rights reserved.
+                </p>
             </div>
         </div>
 	</footer>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-	<script src="assets/lib/bootstrap-3.1.1/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 
 	<script>
 	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
