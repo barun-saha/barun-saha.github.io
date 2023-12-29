@@ -33,7 +33,12 @@
         p.normal {
             font-size: 1em;
         }
+        h2, h3, h4, h5 {
+            color: gray;
+            padding-bottom: 1px;
+        }
         h2>a, h3>a, h4>a, h5>a {
+            color: gray;
             text-decoration: none;
         }
         .navbar-brand {
@@ -171,16 +176,16 @@
             <img align="left" alt="Barun Saha" style="padding-right: 8px;" width="200" height="200" class="circle" src="images/self/barun_saha_thumbnail.jpg">
 
             <p>
-                I received a PhD degree in Computer Science &amp; Engineering from <a href="http://iitkgp.ac.in/">Indian Institute of Technology Kharagpur</a>, India. In my PhD thesis, titled &ldquo;Content Dissemination in Opportunistic Mobile Networks (OMNs),&rdquo; I investigated different modes of distributing content to the users in OMNs. I also received the MS (by Research) degree from <a href="http://iitkgp.ac.in/">Indian Institute of Technology Kharagpur</a>. Prior to that, I worked at Wipro Technologies at Bangalore and Chennai, India.
+                I received a PhD degree in Computer Science &amp; Engineering from <a href="http://iitkgp.ac.in/">Indian Institute of Technology Kharagpur</a>, India. In my PhD thesis, titled &ldquo;Content Dissemination in Opportunistic Mobile Networks (OMNs),&rdquo; I investigated different modes of distributing content to the users in OMNs. I also received the MS (by Research) degree from <a href="http://iitkgp.ac.in/">Indian Institute of Technology Kharagpur</a>. Prior to that, I was with Wipro Technologies.
             </p>
 
             <p>
                 In the past, I have extensively worked with <a href="the_omn_book.html">Opportunistic Mobile
-                Networks</a>, and co-authored a textbook on the subject. I had co-organized the first ACM MobiCom Workshop on <a href="https://sigmobile.org/mobicom/2018/workshops/ficn/index.html">Future Industrial Communication Networks</a> at New Delhi, India in 2018.
+                Networks</a>, and co-authored a textbook on the subject. I had co-organized the first ACM MobiCom Workshop on <a href="https://sigmobile.org/mobicom/2018/workshops/ficn/index.html">Future Industrial Communication Networks</a> at New Delhi, India, in 2018.
             </p>
 
             <p>
-                I also write <a href="poetry.html">poetry</a>. Some of my poems can be found in my <a href="https://twitter.com/1barun">Twitter</a> account.
+                I also write <a href="poetry.html">poetry</a>. Some of my poems can be found on <a href="https://twitter.com/1barun">Twitter/X</a>.
             </p>
         </div>
 
@@ -233,7 +238,7 @@
                     </div>
                 </div>
 
-                <div class="panel-footer">
+                <div class="panel-footer border-top border-dark">
                 </div>
 
             </div>
@@ -260,12 +265,12 @@
             <div class="card">
                 <div class="card-body">
                     <h5 class="card-title">
-                        <span class="fa fa-cogs circle-icon2 pull-left">
+                        <span class="fa fa-code circle-icon2 pull-left">
                         </span>
-                        <a href="research.html#service">Services</a>
+                        <a href="ai.html#hackathons">Solutions</a>
                     </h5>
                     <p class="card-text normal">
-                      Services rendered to the research community
+                      Some of my Generative AI projects and activities
                     </p>
                 </div>
             </div>
@@ -288,12 +293,12 @@
             <div class="card">
                 <div class="card-body">
                     <h5 class="card-title">
-                        <span class="fa fa-code circle-icon2 pull-left">
+                        <span class="fa fa-cogs circle-icon2 pull-left">
                         </span>
-                        <a href="ai.html#hackathons">Software</a>
+                        <a href="research.html#service">Services</a>
                     </h5>
                     <p class="card-text normal">
-                      A list of GenAI solutions developed
+                      Services offered to the research community
                     </p>
                 </div>
             </div>
@@ -370,6 +375,17 @@
             animationSpeed: 'normal',
             newsTickerInterval: 5000 //5 secs
         });
+        
+        $("span.glyphicon-chevron-down").removeClass(
+            "glyphicon glyphicon-chevron-down"
+        ).addClass(
+            "fa-solid fa-chevron-down ms-5"
+        ).attr("title", "Scroll down");
+        $("span.glyphicon-chevron-up").removeClass(
+            "glyphicon glyphicon-chevron-up"
+        ).addClass(
+            "fa-solid fa-chevron-up ms-5"
+        ).attr("title", "Scroll up");
     });
 </script>
 
