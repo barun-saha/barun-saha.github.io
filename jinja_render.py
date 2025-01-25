@@ -52,7 +52,7 @@ for item in PAGE_LIST:
     #print html
     # Write output in the corresponding HTML file
     print('Writing', file_name)
-    with open(file_name, 'w') as out_file:
+    with open(file_name, 'w', encoding='utf-8') as out_file:
         out_file.write(html)
 
     # Rotate active states for the next page
