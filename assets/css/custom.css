@@ -7,7 +7,7 @@ h3 {
     font-size: 1.05em;
 }
 .active {
-  background-color: #EEEEEE;
+  background-color: var(--bs-tertiary-bg);
 }
 .entry {
     padding: 10px 18px;
@@ -20,7 +20,7 @@ h3 {
 }
 
 .blog-header-container {
-    border-bottom: 1px dotted gray;
+    border-bottom: 1px dotted var(--bs-secondary-border-subtle);
 }
 
 .blog-header {
@@ -311,14 +311,14 @@ h3 {
 }
 .highlights dd {
     padding-bottom: 25px;
-    border-bottom: 1px dotted gray;
+    border-bottom: 1px dotted var(--bs-secondary-border-subtle);
 }
 
 .subfooter li {
     font-size: 1.1em;
     padding: 0 15px;
 /*    padding-left: 14px;*/
-    border-right: 1px solid #1995dc;
+    border-right: 1px solid var(--bs-primary);
 }
 .subfooter li.last {
     border: 0;
@@ -355,7 +355,7 @@ p.h4.meta {
 .book-social {
     padding: 10px;
     border: 1px solid tomato;
-    background-color: #FFFFC2;
+    background-color: var(--bs-warning-bg-subtle);
 }
 .site-message {
     font-size: 1.2em;
@@ -366,13 +366,12 @@ p.h4.meta {
 
 blockquote{
     display:block;
-    background: #fff;
     padding: 15px 20px 15px 45px;
     margin: 0 0 20px;
     position: relative;
     line-height: 1.2;
     border-left: 5px solid tomato;
-    background-color: #fafafa;
+    background-color: var(--bs-tertiary-bg);
 }
 blockquote::before{
     content: "\201C";
@@ -435,3 +434,20 @@ blockquote small {
     font-size: 1.1em;
     padding: 5px;
 }
+
+[data-bs-theme="dark"] .page-title {
+    background: var(--bs-primary-dark-subtle);
+}
+
+[data-bs-theme="dark"] blockquote {
+    background-color: var(--bs-dark-bg-subtle);
+}
+
+[data-bs-theme="dark"] .news-item {
+    border-color: var(--bs-border-color-translucent);
+}
+
+[data-bs-theme="dark"] .highlights dd {
+    border-color: var(--bs-border-color-translucent);
+}
+

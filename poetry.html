@@ -1,154 +1,321 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="Other activities of Barun">
-	<meta name="author" content="Barun Saha">
+<html lang="en" data-bs-theme="auto">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Other activities of Barun">
+    <meta name="author" content="Barun Saha">
     <meta name="theme-color" content="#54b4eb">
 
-	<title>Barun Saha | Poetry</title>
+    <title>Barun Saha | Poetry</title>
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/fontawesome.min.css" integrity="sha512-d0olNN35C6VLiulAobxYHZiXJmq+vl+BGIgAxQtD5+kqudro/xNMvv2yIHAciGHpExsIbKX3iLg+0B6d0k4+ZA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/solid.min.css" integrity="sha512-pZlKGs7nEqF4zoG0egeK167l6yovsuL8ap30d07kA5AJUq+WysFlQ02DLXAmN3n0+H3JVz5ni8SJZnrOaYXWBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/brands.min.css" integrity="sha512-8RxmFOVaKQe/xtg6lbscU9DU0IRhURWEuiI0tXevv+lXbAHfkpamD4VKFQRto9WgfOJDwOZ74c/s9Yesv3VvIQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/fontawesome.min.css"
+        integrity="sha512-d0olNN35C6VLiulAobxYHZiXJmq+vl+BGIgAxQtD5+kqudro/xNMvv2yIHAciGHpExsIbKX3iLg+0B6d0k4+ZA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/solid.min.css"
+        integrity="sha512-pZlKGs7nEqF4zoG0egeK167l6yovsuL8ap30d07kA5AJUq+WysFlQ02DLXAmN3n0+H3JVz5ni8SJZnrOaYXWBA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/brands.min.css"
+        integrity="sha512-8RxmFOVaKQe/xtg6lbscU9DU0IRhURWEuiI0tXevv+lXbAHfkpamD4VKFQRto9WgfOJDwOZ74c/s9Yesv3VvIQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <link rel="preload" href="assets/css/custom.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="assets/css/custom.css"></noscript>
-    <link rel="preload" href="assets/css/academicons_v1.5/academicons.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="assets/css/academicons_v1.5/academicons.css"></noscript>
+    <noscript>
+        <link rel="stylesheet" href="assets/css/custom.css">
+    </noscript>
+    <link rel="preload" href="assets/css/academicons_v1.5/academicons.css" as="style"
+        onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="assets/css/academicons_v1.5/academicons.css">
+    </noscript>
 
-	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-	<!--[if lt IE 9]>
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
 	  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
 	  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 	<![endif]-->
-    
+
     <style>
         p {
             font-size: 1.12em;
-            color: #333333;
+            color: var(--bs-body-color);
             margin-bottom: 15px;
         }
+
         p.normal {
             font-size: 1em;
         }
-        h2, h3, h4, h5 {
-            color: gray;
+
+        h2,
+        h3,
+        h4,
+        h5 {
+            color: var(--bs-secondary-color);
             padding-bottom: 1px;
         }
-        h2>a, h3>a, h4>a, h5>a {
-            color: gray;
+
+        h2>a,
+        h3>a,
+        h4>a,
+        h5>a {
+            color: inherit;
             text-decoration: none;
         }
+
         .navbar-brand {
-            font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
             float: none;
             font-size: 2em;
             display: block;
         }
+
         nav.navbar {
-            -moz-box-shadow: 0px 5px 5px 0px rgba(139, 190, 245, 1);
-            box-shadow: 0px 5px 5px 0px rgba(139, 190, 245, 1);*/
+            -moz-box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.1);
+            box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.1);
             border-radius: 0;
             margin-bottom: 0;
         }
+
         .page-title {
             font-size: 1.7em;
             padding-top: 15px;
             padding-bottom: 15px;
-            background: #AEDDF9;
-            color: #3d3d3d;
+            background: var(--bs-primary-bg-subtle);
+            color: var(--bs-primary-text-emphasis);
         }
-        body > div.container {
+
+        body>div.container {
             padding-top: 20px;
         }
+
         .circle {
             border-radius: 50%;
             -moz-border-radius: 50%;
             -webkit-border-radius: 50%;
         }
+
         .panel ul {
             padding: 0px;
             margin: 0px;
             list-style: none;
         }
+
         .news-item {
             padding: 5px 5px;
             margin: 0px;
-            border-bottom: 1px dotted gray;
+            border-bottom: 1px dotted var(--bs-secondary-border-subtle);
         }
+
         .panel-footer {
             padding: 4px;
         }
-        .footer {
-            background: #1995dc;
-        }
-        .subfooter {
-            background: #AEDDF9;
-        }
-        .footer * {
-            color: #e8e8e8 !important;
-        }
-        .subfooter * {
-            color: #888888;
-        }
-        
-        
-    </style>
-  </head>
 
-  <body>
-      
-      <nav class="navbar navbar-expand-lg bg-body-tertiary">
-          <div class="container-md">
-              <a class="navbar-brand" href="/">Barun Saha</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        .footer {
+            background: var(--bs-primary-bg-subtle);
+            border-top: 1px solid var(--bs-border-color);
+        }
+
+        .subfooter {
+            background: var(--bs-secondary-bg-subtle);
+        }
+
+        .footer * {
+            color: var(--bs-body-color) !important;
+        }
+
+        .subfooter * {
+            color: var(--bs-secondary-color);
+        }
+
+
+            {
+            % block styles %
+        }
+
+            {
+            % endblock %
+        }
+    </style>
+    <script>
+        /*!
+         * Color mode toggler for Bootstrap's docs (https://getbootstrap.com/)
+         * Copyright 2011-2023 The Bootstrap Authors
+         * Licensed under the Creative Commons Attribution 3.0 Unported License.
+         */
+
+        (() => {
+            'use strict'
+
+            const getStoredTheme = () => localStorage.getItem('theme')
+            const setStoredTheme = theme => localStorage.setItem('theme', theme)
+
+            const getPreferredTheme = () => {
+                const storedTheme = getStoredTheme()
+                if (storedTheme) {
+                    return storedTheme
+                }
+
+                return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
+            }
+
+            const setTheme = theme => {
+                if (theme === 'auto' && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                    document.documentElement.setAttribute('data-bs-theme', 'dark')
+                } else {
+                    document.documentElement.setAttribute('data-bs-theme', theme)
+                }
+            }
+
+            setTheme(getPreferredTheme())
+
+            const showActiveTheme = (theme, focus = false) => {
+                const themeSwitcher = document.querySelector('#bd-theme')
+
+                if (!themeSwitcher) {
+                    return
+                }
+
+                const themeSwitcherText = document.querySelector('#bd-theme-text')
+                const activeThemeIcon = document.querySelector('.theme-icon-active')
+                const btnToActive = document.querySelector(`[data-bs-theme-value="${theme}"]`)
+                const svgOfActiveBtn = btnToActive.querySelector('span.theme-icon').getAttribute('class')
+
+                document.querySelectorAll('[data-bs-theme-value]').forEach(element => {
+                    element.classList.remove('active')
+                    element.setAttribute('aria-pressed', 'false')
+                })
+
+                btnToActive.classList.add('active')
+                btnToActive.setAttribute('aria-pressed', 'true')
+                activeThemeIcon.setAttribute('class', svgOfActiveBtn + ' theme-icon-active')
+                const themeWindowTitle = `${themeSwitcherText.textContent} (${btnToActive.dataset.bsThemeValue})`
+                themeSwitcher.setAttribute('aria-label', themeWindowTitle)
+
+                if (focus) {
+                    themeSwitcher.focus()
+                }
+            }
+
+            window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => {
+                const storedTheme = getStoredTheme()
+                if (storedTheme !== 'light' && storedTheme !== 'dark') {
+                    setTheme(getPreferredTheme())
+                }
+            })
+
+            window.addEventListener('DOMContentLoaded', () => {
+                showActiveTheme(getPreferredTheme())
+
+                document.querySelectorAll('[data-bs-theme-value]')
+                    .forEach(toggle => {
+                        toggle.addEventListener('click', () => {
+                            const theme = toggle.getAttribute('data-bs-theme-value')
+                            setStoredTheme(theme)
+                            setTheme(theme)
+                            showActiveTheme(theme, true)
+                        })
+                    })
+            })
+        })()
+    </script>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-md">
+            <a class="navbar-brand" href="/">Barun Saha</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
-              </button>
-              
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                  <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center">
                     <li class="nav-item ">
-                      <a class="nav-link" href="research.html"><span class="fa-solid fa-flask fa-lg"></span> Research</a>
+                        <a class="nav-link" href="research.html"><span class="fa-solid fa-flask fa-lg"></span>
+                            Research</a>
                     </li>
-                      <li class="nav-item ">
-                      <a class="nav-link" href="ai.html"><span class="fa-solid fa-microchip fa-lg"></span> GenAI</a>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="ai.html"><span class="fa-solid fa-microchip fa-lg"></span> GenAI</a>
                     </li>
-                      <li class="nav-item ">
-                      <a class="nav-link" href="the_omn_book.html"><span class="fa-solid fa-book fa-lg"></span> #TheOMNBook</a>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="the_omn_book.html"><span class="fa-solid fa-book fa-lg"></span>
+                            #TheOMNBook</a>
                     </li>
-                      <li class="nav-item active">
-                      <a class="nav-link" href="poetry.html"><span class="fa-solid fa-feather fa-lg"></span> Poetry</a>
-                    </li>           
+                    <li class="nav-item active">
+                        <a class="nav-link" href="poetry.html"><span class="fa-solid fa-feather fa-lg"></span>
+                            Poetry</a>
+                    </li>
                     <li class="nav-item dropdown ">
-                      <a class="nav-link dropdown-toggle" href="#" id="softwareDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        <span class="fa-solid fa-code fa-lg"></span> Software
-                      </a>
-                      <ul class="dropdown-menu" aria-labelledby="softwareDropdown">
-                        <li><a class="dropdown-item" href="software.html">View all</a></li>
-                          <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="software.html#virtual_labs">Virtual Labs</a></li>
-                        <li><a class="dropdown-item" href="software.html#the_one_kb">The ONE Knowledge Base</a></li>
-                      </ul>
+                        <a class="nav-link dropdown-toggle" href="#" id="softwareDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <span class="fa-solid fa-code fa-lg"></span> Software
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="softwareDropdown">
+                            <li><a class="dropdown-item" href="software.html">View all</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="software.html#virtual_labs">Virtual Labs</a></li>
+                            <li><a class="dropdown-item" href="software.html#the_one_kb">The ONE Knowledge Base</a></li>
+                        </ul>
                     </li>
-                      
+
                     <li class="nav-item dropdown ">
-                      <a class="nav-link dropdown-toggle" href="#" id="projectsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        <span class="fa-solid fa-list fa-lg"></span> Miscellaneous
-                      </a>
-                      <ul class="dropdown-menu" aria-labelledby="projectsDropdown">
-                        <li><a class="dropdown-item" href="/blog/">A Better Life</a></li>
-                        <li><a class="dropdown-item" href="http://delay-tolerant-networks.blogspot.com/">The DTN Blog</a></li>
-                      </ul>
+                        <a class="nav-link dropdown-toggle" href="#" id="projectsDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <span class="fa-solid fa-list fa-lg"></span> Miscellaneous
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="projectsDropdown">
+                            <li><a class="dropdown-item" href="/blog/">A Better Life</a></li>
+                            <li><a class="dropdown-item" href="http://delay-tolerant-networks.blogspot.com/">The DTN
+                                    Blog</a></li>
+                        </ul>
                     </li>
-                  </ul>
-              </div>
-          </div>
-      </nav>
-      
+
+                    <li class="nav-item dropdown px-2">
+                        <button
+                            class="btn btn-link nav-link py-2 px-0 px-lg-2 dropdown-toggle d-flex align-items-center"
+                            id="bd-theme" type="button" aria-expanded="false" data-bs-toggle="dropdown"
+                            aria-label="Toggle theme (auto)">
+                            <span class="fa-solid fa-circle-half-stroke theme-icon-active fa-lg"></span>
+                            <span class="d-lg-none ms-2" id="bd-theme-text">Toggle theme</span>
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="bd-theme-text">
+                            <li>
+                                <button type="button" class="dropdown-item d-flex align-items-center"
+                                    data-bs-theme-value="light" aria-pressed="false">
+                                    <span class="fa-solid fa-sun me-2 theme-icon"></span>
+                                    Light
+                                </button>
+                            </li>
+                            <li>
+                                <button type="button" class="dropdown-item d-flex align-items-center"
+                                    data-bs-theme-value="dark" aria-pressed="false">
+                                    <span class="fa-solid fa-moon me-2 theme-icon"></span>
+                                    Dark
+                                </button>
+                            </li>
+                            <li>
+                                <button type="button" class="dropdown-item d-flex align-items-center active"
+                                    data-bs-theme-value="auto" aria-pressed="true">
+                                    <span class="fa-solid fa-circle-half-stroke me-2 theme-icon"></span>
+                                    Auto
+                                </button>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
 
     <div class="page-title">
         <div class="container">
@@ -156,7 +323,7 @@ Barun's Poetry
 </div>
     </div>
 
-	
+    
 
 	<div class="container">
         <p>
@@ -266,22 +433,28 @@ Barun's Poetry
     <footer>
         <div class="subfooter text-center pt-1 pb-1">
             <section>
-                <a data-mdb-ripple-init class="btn btn-outline btn-floating m-1" href="images/self/email.jpg" role="button">
+                <a data-mdb-ripple-init class="btn btn-outline btn-floating m-1" href="images/self/email.jpg"
+                    role="button">
                     <span class="fas fa-envelope-square fa-lg" title="Email"></span>
                 </a>
-                <a data-mdb-ripple-init class="btn btn-outline btn-floating m-1" href="http://in.linkedin.com/in/barunsaha" role="button">
+                <a data-mdb-ripple-init class="btn btn-outline btn-floating m-1"
+                    href="http://in.linkedin.com/in/barunsaha" role="button">
                     <span class="fab fa-linkedin-in fa-lg" title="LinkedIn"></span>
                 </a>
-                <a data-mdb-ripple-init class="btn btn-outline btn-floating m-1" href="https://github.com/barun-saha" role="button">
+                <a data-mdb-ripple-init class="btn btn-outline btn-floating m-1" href="https://github.com/barun-saha"
+                    role="button">
                     <span class="fab fa-github fa-lg" title="GitHub"></span>
                 </a>
-                <a data-mdb-ripple-init class="btn btn-outline btn-floating m-1" href="https://scholar.google.co.in/citations?user=OQVTsxEAAAAJ&hl=en" role="button">
+                <a data-mdb-ripple-init class="btn btn-outline btn-floating m-1"
+                    href="https://scholar.google.co.in/citations?user=OQVTsxEAAAAJ&hl=en" role="button">
                     <span class="ai ai-google-scholar-square fa-lg" title="Google Scholar"></span>
                 </a>
-                <a data-mdb-ripple-init class="btn btn-outline btn-floating m-1" href="https://www.researchgate.net/profile/Barun_Saha" role="button">
+                <a data-mdb-ripple-init class="btn btn-outline btn-floating m-1"
+                    href="https://www.researchgate.net/profile/Barun_Saha" role="button">
                     <span class="ai ai-researchgate-square fa-lg" title="ResearchGate"></span>
                 </a>
-                <a data-mdb-ripple-init class="btn btn-outline btn-floating m-1" href="https://twitter.com/1barun" role="button">
+                <a data-mdb-ripple-init class="btn btn-outline btn-floating m-1" href="https://twitter.com/1barun"
+                    role="button">
                     <span class="fab fa-twitter fa-lg" title="Twitter/X"></span>
                 </a>
             </section>
@@ -295,22 +468,25 @@ Barun's Poetry
                 </p>
             </div>
         </div>
-	</footer>
+    </footer>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.10.2/umd/popper.min.js" integrity="sha512-nnzkI2u2Dy6HMnzMIkh7CPd1KX445z38XIu4jG1jGw7x5tSL3VBjE44dY4ihMU1ijAQV930SPM12cCFrB18sVw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.10.2/umd/popper.min.js"
+        integrity="sha512-nnzkI2u2Dy6HMnzMIkh7CPd1KX445z38XIu4jG1jGw7x5tSL3VBjE44dY4ihMU1ijAQV930SPM12cCFrB18sVw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
 
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-95NSYK0SRK"></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-      gtag('config', 'G-95NSYK0SRK');
+        gtag('config', 'G-95NSYK0SRK');
     </script>
 
 
     
 
-  </body>
+</body>
+
 </html>
