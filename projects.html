@@ -175,13 +175,23 @@
             box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
         }
 
-            {
-            % block styles %
-        }
+        
+.card-title {
+color: var(--bs-secondary-color) !important;
+font-weight: 500;
+}
+.card-title a {
+color: inherit !important;
+text-decoration: none;
+transition: color 0.3s ease;
+}
+.card-title a:hover {
+color: var(--bs-primary) !important;
+}
+.card-body {
+color: var(--bs-body-color);
+}
 
-            {
-            % endblock %
-        }
     </style>
     <script>
         /*!

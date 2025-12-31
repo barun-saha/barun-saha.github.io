@@ -175,13 +175,34 @@
             box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
         }
 
-            {
-            % block styles %
-        }
+        
+.card-title {
+display: flex;
+align-items: center;
+gap: 12px;
+margin-bottom: 0.75rem;
+}
+/* Muted titles that adapt to light/dark themes */
+.card-title a {
+color: var(--bs-secondary-color) !important;
+font-weight: 500;
+transition: color 0.3s ease;
+}
+.card-title a:hover {
+color: var(--bs-primary) !important;
+}
+/* Muted blue icons */
+.circle-icon2 {
+color: #54b4eb !important;
+font-size: 1.1rem;
+opacity: 0.75;
+}
+/* Main focus text */
+.card-text.normal {
+color: var(--bs-body-color);
+font-size: 1rem;
+}
 
-            {
-            % endblock %
-        }
     </style>
     <script>
         /*!
@@ -357,18 +378,14 @@
     <div class="row" id="main">
         <div class="col-md-12">
             <p>
-                Hi! I am Barun.
-                <strong>Scientist & Poet</strong>
-            </p>
-
-            <img style="float: left;" alt="Barun Saha" width="200" height="200" class="circle me-3"
-                src="images/self/barun_saha_thumbnail_200x200.png">
-
-            <p>
+                <strong>Hi! I am Barun.</strong>
                 I am a researcher and developer specializing in Artificial Intelligence, Generative AI, and Networked
                 Systems. I hold a PhD and MS (by Research) from the Indian Institute of Technology Kharagpur, where my
                 research focused on Content Dissemination in Opportunistic Mobile Networks (OMNs).
             </p>
+
+            <img style="float: left;" alt="Barun Saha" width="200" height="200" class="circle me-3"
+                src="images/self/barun_saha_thumbnail_200x200.png">
 
             <p>
                 My recent work bridges the gap between Large Language Models (LLMs) and systems. I am currently
@@ -394,13 +411,12 @@
     </div>
 
 
-    <div class="row row-cols-1 row-cols-md-4 g-4 mb-4 mt-2">
+    <div class="row row-cols-1 row-cols-md-4 g-4 mb-5 mt-4 pt-4">
         <div class="col">
-            <div class="card">
+            <div class="card h-100">
                 <div class="card-body">
                     <h5 class="card-title">
-                        <span class="fa fa-book circle-icon2 pull-left">
-                        </span>
+                        <span class="fa-solid fa-book circle-icon2"></span>
                         <a href="research.html#papers">Papers</a>
                     </h5>
                     <p class="card-text normal">
@@ -410,11 +426,10 @@
             </div>
         </div>
         <div class="col">
-            <div class="card">
+            <div class="card h-100">
                 <div class="card-body">
                     <h5 class="card-title">
-                        <span class="fa fa-code circle-icon2 pull-left">
-                        </span>
+                        <span class="fa-solid fa-code circle-icon2"></span>
                         <a href="projects.html#ai_projects">Projects</a>
                     </h5>
                     <p class="card-text normal">
@@ -424,11 +439,10 @@
             </div>
         </div>
         <div class="col">
-            <div class="card">
+            <div class="card h-100">
                 <div class="card-body">
                     <h5 class="card-title">
-                        <span class="fa fa-magic circle-icon2 pull-left">
-                        </span>
+                        <span class="fa-solid fa-rss circle-icon2"></span>
                         <a href="https://delay-tolerant-networks.blogspot.com/">DTN Blog</a>
                     </h5>
                     <p class="card-text normal">
@@ -438,11 +452,10 @@
             </div>
         </div>
         <div class="col">
-            <div class="card">
+            <div class="card h-100">
                 <div class="card-body">
                     <h5 class="card-title">
-                        <span class="fa fa-database circle-icon2 pull-left">
-                        </span>
+                        <span class="fa-solid fa-database circle-icon2"></span>
                         <a href="projects.html#datasets">Datasets</a>
                     </h5>
                     <p class="card-text normal">
@@ -456,9 +469,10 @@
     <p>
         This website is developed using
         <a href="http://getbootstrap.com/">Bootstrap</a>,
-        <a href="http://jekyllrb.com/">Jekyll</a>, and
-        <a href="http://jinja.pocoo.org/">Jinja</a>, and is powered by <a href="https://pages.github.com/">
-            GitHub Pages</a>.
+        <a href="http://jekyllrb.com/">Jekyll</a>,
+        <a href="http://jinja.pocoo.org/">Jinja</a>, and
+        <a href="https://antigravity.google/">Antigravity</a>,
+        and is powered by <a href="https://pages.github.com/"> GitHub Pages</a>.
     </p>
 </div>
 
