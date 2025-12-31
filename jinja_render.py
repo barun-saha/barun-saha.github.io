@@ -27,21 +27,20 @@ ENV = Environment(loader=FileSystemLoader('./templates'))
 
 # List of pages to be rendered -- MUST be listed according to their order
 # in the navigation bar
-PAGE_LIST = ['index', 'research', 'ai', 'the_omn_book', 'poetry', 'software', 'misc',]
+PAGE_LIST = ['index', 'research', 'projects', 'the_omn_book', 'poetry', 'misc',]
 
 # Title of individual pages
 TITLES = {
     'index': 'Barun Saha',
     'misc': 'Barun Saha | Miscellaneous',
-    'software': 'Barun Saha | Software',
+    'projects': 'Barun Saha | Projects & Solutions',
     'research': 'Barun Saha | Research',
     'the_omn_book': 'Barun Saha | Opportunistic Mobile Networks',
     'poetry': 'Barun Saha | Poetry',
-    'ai': 'Barun Saha | AI',
 }
 
 # CSS active class for the navigation bar list items
-state = ['active', '', '', '', '', '', '']
+state = ['active', '', '', '', '', '']
 
 for item in PAGE_LIST:
     file_name = item + '.html'

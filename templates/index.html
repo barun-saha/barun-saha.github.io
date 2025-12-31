@@ -1,16 +1,34 @@
-{% extends "base.html" %} {% block page_description %}Barun Saha's home in the Internet{% endblock %} {% block page_title %} Scientist &amp; Poet {% endblock %} 
+{% extends "base.html" %} {% block page_description %}Barun Saha's home in the Internet{% endblock %} {% block
+page_title %} Scientist &amp; Poet {% endblock %}
 
 
 {% block styles %}
-    .circle-icon, .circle-icon2 {
-        position: relative;
-        top: 15%;
-        color: #AEDDF9;
-    }
-    .circle-icon2 {
-        color: #FF9579;
-        font-size: 30px;
-    }
+.card-title {
+display: flex;
+align-items: center;
+gap: 12px;
+margin-bottom: 0.75rem;
+}
+/* Muted titles that adapt to light/dark themes */
+.card-title a {
+color: var(--bs-secondary-color) !important;
+font-weight: 500;
+transition: color 0.3s ease;
+}
+.card-title a:hover {
+color: var(--bs-primary) !important;
+}
+/* Muted blue icons */
+.circle-icon2 {
+color: #54b4eb !important;
+font-size: 1.1rem;
+opacity: 0.75;
+}
+/* Main focus text */
+.card-text.normal {
+color: var(--bs-body-color);
+font-size: 1rem;
+}
 {% endblock %}
 
 
@@ -18,161 +36,106 @@
 
 <div class="container">
     <div class="row" id="main">
-        <div class="col-md-8">
+        <div class="col-md-12">
             <p>
-                Hi! I am Barun.
-                I am a Senior R&amp;D Engineer with <a href="https://www.hitachienergy.com/">Hitachi Energy</a>, Bangalore, India. 
-                I primarily work on AI, Generative AI, and networks.
+                <strong>Hi! I am Barun.</strong>
+                I am a researcher and developer specializing in Artificial Intelligence, Generative AI, and Networked
+                Systems. I hold a PhD and MS (by Research) from the Indian Institute of Technology Kharagpur, where my
+                research focused on Content Dissemination in Opportunistic Mobile Networks (OMNs).
             </p>
 
-            <img style="float: left;" alt="Barun Saha"  width="200" height="200" class="circle me-3" src="images/self/barun_saha_thumbnail_200x200.png">
+            <img style="float: left;" alt="Barun Saha" width="200" height="200" class="circle me-3"
+                src="images/self/barun_saha_thumbnail_200x200.png">
 
             <p>
-                I received a PhD degree in Computer Science &amp; Engineering from <a href="http://iitkgp.ac.in/">Indian Institute of Technology Kharagpur</a>, India. In my PhD thesis, titled &ldquo;Content Dissemination in Opportunistic Mobile Networks (OMNs),&rdquo; I investigated different modes of distributing content to the users in OMNs. I also received the MS (by Research) degree from <a href="http://iitkgp.ac.in/">Indian Institute of Technology Kharagpur</a>. Prior to that, I was with Wipro Technologies.
+                My recent work bridges the gap between Large Language Models (LLMs) and systems. I am currently
+                investigating AI agents, Natural Language Understanding, and Intent-based Systems.
+                For example, I have investigated network management using natural language and
+                fault analysis using AI agents. Checkout the <a href="research.html">research</a>
+                section for more details.
             </p>
 
             <p>
                 In the past, I have extensively worked with <a href="the_omn_book.html">Opportunistic Mobile
-                Networks</a>, and co-authored a textbook on the subject. I had co-organized the first ACM MobiCom Workshop on <a href="https://sigmobile.org/mobicom/2018/workshops/ficn/index.html">Future Industrial Communication Networks</a> at New Delhi, India, in 2018.
+                    Networks</a>, and co-authored a textbook on the subject. I had co-organized the first ACM MobiCom
+                Workshop on <a href="https://sigmobile.org/mobicom/2018/workshops/ficn/index.html">Future Industrial
+                    Communication Networks</a> at New Delhi, India, in 2018.
             </p>
 
             <p>
-                I also write <a href="poetry.html">poetry</a>. Some of my poems can be found on <a href="https://twitter.com/1barun">Twitter/X</a>.
+                I also explore the intersection of human
+                emotion and language through <a href="poetry.html">poetry</a>.
             </p>
         </div>
 
-
-        <div class="col-md-4">
-            <!-- News box -->
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <span class="fa fa-newspaper-o fa-lg"></span>
-                    <b>News</b>
-                </div>
-
-                <div class="panel-body">
-                    <div class="row">
-                        <div class="col-xs-12">
-                            <ul class="news">
-                                <li class="news-item">
-                                    <span class="news-date">[21 Feb 2025]</span>
-                                    Presented a paper on agentic fault analysis at ICAIIC '25
-                                </li>
-                                <li class="news-item">
-                                    <span class="news-date">[27 Dec 2023]</span>
-                                    The <a href="https://github.com/barun-saha/CodePrompt">
-                                        CodePrompt</a> dataset (and paper) is available
-                                </li>
-                                <li class="news-item">
-                                    <span class="news-date">[07 Sep 2023]</span>
-                                    <a href="https://www.clarifai.com/blog/llama-2-hackathon-with-clarifai-winners-announcement">
-                                        Won 3rd Place</a> in the Llama 2 Hackathon with Clarifai
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="panel-footer border-top bg-light">
-                </div>
-
-            </div>
-        </div>
     </div>
 
-    
-    <div class="row row-cols-1 row-cols-md-4 g-4 mb-4 mt-2">
+
+    <div class="row row-cols-1 row-cols-md-4 g-4 mb-5 mt-4 pt-4">
         <div class="col">
-            <div class="card">
+            <div class="card h-100">
                 <div class="card-body">
                     <h5 class="card-title">
-                        <span class="fa fa-book circle-icon2 pull-left">
-                        </span>
+                        <span class="fa-solid fa-book circle-icon2"></span>
                         <a href="research.html#papers">Papers</a>
                     </h5>
                     <p class="card-text normal">
-                      A list of research publications
+                        A list of research publications
                     </p>
                 </div>
             </div>
         </div>
         <div class="col">
-            <div class="card">
+            <div class="card h-100">
                 <div class="card-body">
                     <h5 class="card-title">
-                        <span class="fa fa-code circle-icon2 pull-left">
-                        </span>
-                        <a href="ai.html#hackathons">Solutions</a>
+                        <span class="fa-solid fa-code circle-icon2"></span>
+                        <a href="projects.html#ai_projects">Projects</a>
                     </h5>
                     <p class="card-text normal">
-                      Some of my Generative AI projects and activities
+                        Personal projects and software solutions
                     </p>
                 </div>
             </div>
         </div>
         <div class="col">
-            <div class="card">
+            <div class="card h-100">
                 <div class="card-body">
                     <h5 class="card-title">
-                        <span class="fa fa-magic circle-icon2 pull-left">
-                        </span>
-                        <a href="https://delay-tolerant-networks.blogspot.com/">Tutorials</a>
+                        <span class="fa-solid fa-rss circle-icon2"></span>
+                        <a href="https://delay-tolerant-networks.blogspot.com/">DTN Blog</a>
                     </h5>
                     <p class="card-text normal">
-                      Tutorials on network simulation
+                        Educational resources on Delay Tolerant Networks
                     </p>
                 </div>
             </div>
         </div>
         <div class="col">
-            <div class="card">
+            <div class="card h-100">
                 <div class="card-body">
                     <h5 class="card-title">
-                        <span class="fa fa-cogs circle-icon2 pull-left">
-                        </span>
-                        <a href="research.html#service">Services</a>
+                        <span class="fa-solid fa-database circle-icon2"></span>
+                        <a href="projects.html#datasets">Datasets</a>
                     </h5>
                     <p class="card-text normal">
-                      Services offered to the research community
+                        Open datasets for AI and NLP research
                     </p>
                 </div>
             </div>
         </div>
     </div>
-    
+
     <p>
         This website is developed using
         <a href="http://getbootstrap.com/">Bootstrap</a>,
-        <a href="http://jekyllrb.com/">Jekyll</a>, and
-        <a href="http://jinja.pocoo.org/">Jinja</a>, and is powered by <a href="https://pages.github.com/">
-            GitHub Pages</a>.
+        <a href="http://jekyllrb.com/">Jekyll</a>,
+        <a href="http://jinja.pocoo.org/">Jinja</a>, and
+        <a href="https://antigravity.google/">Antigravity</a>,
+        and is powered by <a href="https://pages.github.com/"> GitHub Pages</a>.
     </p>
 </div>
 
 {% endblock %} {% block other_scripts %}
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-<script src="assets/lib/bootstrap-news-box/scripts/jquery.bootstrap.newsbox.min.js" type="text/javascript"></script>
-<script type="text/javascript">
-    $(function() {
-        $(".news").bootstrapNews({
-            newsPerPage: 3,
-            navigation: true,
-            autoplay: true,
-            direction: 'up', // up or down
-            animationSpeed: 'normal',
-            newsTickerInterval: 5000 //5 secs
-        });
-        
-        $("span.glyphicon-chevron-down").removeClass(
-            "glyphicon glyphicon-chevron-down"
-        ).addClass(
-            "fa-solid fa-chevron-down ms-5"
-        ).attr("title", "Scroll down");
-        $("span.glyphicon-chevron-up").removeClass(
-            "glyphicon glyphicon-chevron-up"
-        ).addClass(
-            "fa-solid fa-chevron-up ms-5"
-        ).attr("title", "Scroll up");
-    });
-</script>
 {% endblock %}
